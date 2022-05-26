@@ -1,0 +1,12 @@
+.ToDoList {
+  height:100vh;
+}
+
+.EditInput {
+  width: 100%;
+  outline: none;
+}
+
+.EditInput::selection {
+  background-color: transparent;
+}
