@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Row, Card, Col, Container, Carousel } from "react-bootstrap";
+import getData from "../../helpers/data";
 
-const Book = ({ books }) => {
+const Book = () => {
+
+  const [books, setBooks] = useState([{}])
+
+  useEffect(() => {
+    getBooks()
+  }, [])  
+  
+  async function getBooks() {
+    const {data} = await getData()
+    setBooks(data)
+  }
+  
   return (
     <>
       <Carousel className="mb-5">
