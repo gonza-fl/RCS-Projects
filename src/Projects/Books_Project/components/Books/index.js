@@ -3,18 +3,17 @@ import { Row, Card, Col, Container, Carousel } from "react-bootstrap";
 import getData from "../../helpers/data";
 
 const Book = () => {
-
-  const [books, setBooks] = useState([{}])
+  const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    getBooks()
-  }, [])  
-  
+    getBooks();
+  }, []);
+
   async function getBooks() {
-    const {data} = await getData()
-    setBooks(data)
+    const { data } = await getData();
+    setBooks(data);
   }
-  
+
   return (
     <>
       <Carousel className="mb-5">
