@@ -2,12 +2,12 @@
 // import ToDo from "./Projects/ToDo_Project/components/ToDoList";
 // import Book from "./Projects/Books_Project/components/Books";
 // import WeatherApp from "./Projects/Weather_Project/components/WeatherApp";
-import WeatherAppDos from "./Projects/Weather_Project_Dos/components/WeatherApp_dos";
+import WeatherApp from "./Projects/Weather_Project/components/WeatherApp";
 
 const App = () => {
   return (
     <>
-      <WeatherAppDos/>
+      <WeatherApp/>
       {/* <WeatherApp/> */}
       {/* <Book/> */}
       {/* <ToDo/> */}
